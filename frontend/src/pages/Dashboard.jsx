@@ -54,7 +54,8 @@ const Dashboard = () => {
       const { data } = await api.get('/appointments/myappointments');
       setAppointments(data);
     } catch (error) {
-      // Error handled silently
+      console.error("Error fetching appointments:", error.response?.data || error.message);
+      // Error handled silently on UI
     } finally {
       setLoading(false);
     }
