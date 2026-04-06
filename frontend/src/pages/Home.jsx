@@ -104,9 +104,9 @@ const Home = () => {
         
         <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}>
           {[
-            { tag: "The Classic", title: "Executive Haircut", desc: "Precision cut, wash, and styling with premium products.", price: "$45", icon: Scissors },
-            { tag: "The Ritual", title: "Hot Towel Shave", desc: "Traditional straight razor shave with essential oils and hot towels.", price: "$35", icon: Shield },
-            { tag: "The Ultimate", title: "Full Grooming", desc: "Haircut, beard trim, hot towel shave, and mini facial.", price: "$90", icon: Star },
+            { tag: "The Classic", title: "Executive Haircut", desc: "Precision cut, wash, and styling with premium products.", price: "₹399", icon: Scissors },
+            { tag: "The Ritual", title: "Hot Towel Shave", desc: "Traditional straight razor shave with essential oils and hot towels.", price: "₹299", icon: Shield },
+            { tag: "The Ultimate", title: "Full Grooming", desc: "Haircut, beard trim, hot towel shave, and mini facial.", price: "₹799", icon: Star },
           ].map((service, i) => (
             <motion.div key={i} variants={fadeInUp} className="glass-card group hover:-translate-y-2 transition-transform duration-500 cursor-pointer relative overflow-hidden">
                <div className="absolute top-0 left-0 w-2 h-full bg-primary transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-500"></div>
